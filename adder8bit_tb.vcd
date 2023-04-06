@@ -1,0 +1,209 @@
+$date
+	Thu Apr 06 21:17:21 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module adder8bit_tb $end
+$var wire 1 ! cout $end
+$var wire 8 " sum [7:0] $end
+$var reg 8 # a [7:0] $end
+$var reg 8 $ b [7:0] $end
+$var reg 1 % cin $end
+$scope module uut $end
+$var wire 8 & a [7:0] $end
+$var wire 8 ' b [7:0] $end
+$var wire 8 ( c [7:0] $end
+$var wire 1 % cin $end
+$var wire 1 ! cout $end
+$var wire 8 ) sum [7:0] $end
+$scope begin gen[1] $end
+$var parameter 2 * i $end
+$scope module and2 $end
+$var wire 1 + e1 $end
+$var wire 1 , e2 $end
+$var wire 1 - s $end
+$upscope $end
+$scope module and3 $end
+$var wire 1 . e1 $end
+$var wire 1 / e2 $end
+$var wire 1 ! s $end
+$upscope $end
+$upscope $end
+$scope begin gen[2] $end
+$var parameter 3 0 i $end
+$scope module and2 $end
+$var wire 1 1 e1 $end
+$var wire 1 2 e2 $end
+$var wire 1 3 s $end
+$upscope $end
+$scope module and3 $end
+$var wire 1 4 e1 $end
+$var wire 1 5 e2 $end
+$var wire 1 ! s $end
+$upscope $end
+$upscope $end
+$scope begin gen[3] $end
+$var parameter 3 6 i $end
+$scope module and2 $end
+$var wire 1 7 e1 $end
+$var wire 1 8 e2 $end
+$var wire 1 9 s $end
+$upscope $end
+$scope module and3 $end
+$var wire 1 : e1 $end
+$var wire 1 ; e2 $end
+$var wire 1 ! s $end
+$upscope $end
+$upscope $end
+$scope begin gen[4] $end
+$var parameter 4 < i $end
+$scope module and2 $end
+$var wire 1 = e1 $end
+$var wire 1 > e2 $end
+$var wire 1 ? s $end
+$upscope $end
+$scope module and3 $end
+$var wire 1 @ e1 $end
+$var wire 1 A e2 $end
+$var wire 1 ! s $end
+$upscope $end
+$upscope $end
+$scope begin gen[5] $end
+$var parameter 4 B i $end
+$scope module and2 $end
+$var wire 1 C e1 $end
+$var wire 1 D e2 $end
+$var wire 1 E s $end
+$upscope $end
+$scope module and3 $end
+$var wire 1 F e1 $end
+$var wire 1 G e2 $end
+$var wire 1 ! s $end
+$upscope $end
+$upscope $end
+$scope begin gen[6] $end
+$var parameter 4 H i $end
+$scope module and2 $end
+$var wire 1 I e1 $end
+$var wire 1 J e2 $end
+$var wire 1 K s $end
+$upscope $end
+$scope module and3 $end
+$var wire 1 L e1 $end
+$var wire 1 M e2 $end
+$var wire 1 ! s $end
+$upscope $end
+$upscope $end
+$scope begin gen[7] $end
+$var parameter 4 N i $end
+$scope module and2 $end
+$var wire 1 O e1 $end
+$var wire 1 P e2 $end
+$var wire 1 Q s $end
+$upscope $end
+$scope module and3 $end
+$var wire 1 R e1 $end
+$var wire 1 S e2 $end
+$var wire 1 ! s $end
+$upscope $end
+$upscope $end
+$scope module and1 $end
+$var wire 1 T e1 $end
+$var wire 1 U e2 $end
+$var wire 1 V s $end
+$upscope $end
+$scope module and4 $end
+$var wire 1 W e1 $end
+$var wire 1 X e2 $end
+$var wire 1 Y s $end
+$upscope $end
+$scope module and5 $end
+$var wire 1 Z e1 $end
+$var wire 1 % e2 $end
+$var wire 1 ! s $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b111 N
+b110 H
+b101 B
+b100 <
+b11 6
+b10 0
+b1 *
+$end
+#0
+$dumpvars
+0Z
+0Y
+0X
+0W
+0V
+0U
+0T
+0S
+0R
+0Q
+0P
+0O
+0M
+0L
+0K
+0J
+0I
+0G
+0F
+0E
+0D
+0C
+0A
+0@
+0?
+0>
+0=
+0;
+0:
+09
+08
+07
+05
+04
+03
+02
+01
+0/
+0.
+0-
+0,
+0+
+b0 )
+b0 (
+b0 '
+b0 &
+0%
+b0 $
+b0 #
+b0 "
+0!
+$end
+#100000
+1Z
+1V
+b1 (
+1Y
+1U
+1X
+1T
+1W
+b1 $
+b1 '
+b1 #
+b1 &
+#120000

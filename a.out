@@ -1,0 +1,60 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "C:\Users\CHLO~1\Desktop\tp2_ia\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\Users\CHLO~1\Desktop\tp2_ia\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\Users\CHLO~1\Desktop\tp2_ia\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\Users\CHLO~1\Desktop\tp2_ia\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\Users\CHLO~1\Desktop\tp2_ia\iverilog\lib\ivl\va_math.vpi";
+S_0000022be912a1b0 .scope module, "adder8bit_tb" "adder8bit_tb" 2 3;
+ .timescale -9 -12;
+v0000022be912ba60_0 .var "a", 7 0;
+v0000022be912bb00_0 .var "b", 7 0;
+v0000022be91b8140_0 .var "cin", 0 0;
+v0000022be91b7ec0_0 .net "cout", 0 0, L_0000022be91b7920;  1 drivers
+o0000022be91771b8 .functor BUFZ 8, C4<zzzzzzzz>; HiZ drive
+v0000022be91b8280_0 .net "sum", 7 0, o0000022be91771b8;  0 drivers
+S_0000022be9175890 .scope module, "uut" "adder8bit" 2 15, 3 1 0, S_0000022be912a1b0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 8 "a";
+    .port_info 1 /INPUT 8 "b";
+    .port_info 2 /INPUT 1 "cin";
+    .port_info 3 /OUTPUT 8 "sum";
+    .port_info 4 /OUTPUT 1 "cout";
+v0000022be912a340_0 .net *"_ivl_12", 1 0, L_0000022be91b7e20;  1 drivers
+v0000022be91428d0_0 .net *"_ivl_3", 7 0, L_0000022be91b79c0;  1 drivers
+v0000022be9175a20_0 .net *"_ivl_5", 7 0, L_0000022be91b8640;  1 drivers
+L_0000022be91b9858 .functor BUFT 1, C4<0000000>, C4<0>, C4<0>, C4<0>;
+v0000022be9175ac0_0 .net *"_ivl_8", 6 0, L_0000022be91b9858;  1 drivers
+v0000022be9175b60_0 .net *"_ivl_9", 7 0, L_0000022be91b7d80;  1 drivers
+v0000022be9175c00_0 .net "a", 7 0, v0000022be912ba60_0;  1 drivers
+v0000022be912b6b0_0 .net "b", 7 0, v0000022be912bb00_0;  1 drivers
+v0000022be912b750_0 .net "cin", 0 0, v0000022be91b8140_0;  1 drivers
+v0000022be912b7f0_0 .net "cout", 0 0, L_0000022be91b7920;  alias, 1 drivers
+v0000022be912b920_0 .net "s", 0 0, L_0000022be91b8500;  1 drivers
+v0000022be912b9c0_0 .net "sum", 7 0, o0000022be91771b8;  alias, 0 drivers
+L_0000022be91b7920 .part L_0000022be91b7e20, 1, 1;
+L_0000022be91b8500 .part L_0000022be91b7e20, 0, 1;
+L_0000022be91b79c0 .arith/sum 8, v0000022be912ba60_0, v0000022be912bb00_0;
+L_0000022be91b8640 .concat [ 1 7 0 0], v0000022be91b8140_0, L_0000022be91b9858;
+L_0000022be91b7d80 .arith/sum 8, L_0000022be91b79c0, L_0000022be91b8640;
+L_0000022be91b7e20 .part L_0000022be91b7d80, 0, 2;
+    .scope S_0000022be912a1b0;
+T_0 ;
+    %pushi/vec4 1, 0, 8;
+    %store/vec4 v0000022be912ba60_0, 0, 8;
+    %pushi/vec4 2, 0, 8;
+    %store/vec4 v0000022be912bb00_0, 0, 8;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000022be91b8140_0, 0, 1;
+    %delay 100000, 0;
+    %vpi_call 2 36 "$display", "sum = %d, cout = %d", v0000022be91b8280_0, v0000022be91b7ec0_0 {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "test_and_gate_add8bit.v";
+    "and_gate_add8bit.v";
